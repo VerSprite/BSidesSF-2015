@@ -1,5 +1,10 @@
 # BSidesSF 2015 
-Introduction to Reverse Engineering Training
+**Introduction to Reverse Engineering Android Applications**
+
+Download: 
+
+  1. CrackME! Android application
+  2. ARM Translation for Genymotion
 
 Building the Environment
 ------------------------
@@ -10,7 +15,7 @@ Building the Environment
 2. If you don't already have VirtualBox you will need to also download and install -> https://www.virtualbox.org
 3. Create a new virtual device -> Add -> Samsung Galaxy S4 - 4.3 - API 18
 4. Power on virtual device
-5. Download ARM Translation support
+5. Download ARM Translation support -> https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip
 6. Drag-and-drop ZIP into booted virtual device - *This will require you to restart the virtual device*
 7. Download CrackME! Android application
 8. Install CrackME! application -> adb install /path/to/apk
