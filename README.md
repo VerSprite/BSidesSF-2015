@@ -1,5 +1,5 @@
 # BSidesSF 2015 
-Introduction to Reverse Engineering Training
+Introduction to Reverse Engineering Android Applications 
 
 Building the Environment
 ------------------------
