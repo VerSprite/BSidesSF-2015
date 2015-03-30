@@ -12,3 +12,7 @@ Building the Environment
 4. Power on virtual device
 5. Download ARM Translation support
 6. Drag-and-drop ZIP into booted virtual device - *This will require you to restart the virtual device*
+7. Download CrackME! Android application
+8. Install CrackME! application -> adb install /path/to/apk
+9. Download and install apktool, dex2jar, androguard, jd-gui
+10. http://ibotpeaches.github.io/Apktool/ - https://code.google.com/p/dex2jar/ - https://github.com/androguard/androguard - http://jd.benow.ca/
