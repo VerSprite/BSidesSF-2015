@@ -6,9 +6,6 @@ Download:
   1. CrackME! Android application
   2. ARM Translation for Genymotion
 
-  git clone 
-  git clone 
-
 Building the Environment
 ------------------------
 
