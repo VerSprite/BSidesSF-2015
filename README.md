@@ -1,10 +1,13 @@
 # BSidesSF 2015 
-*Introduction to Reverse Engineering Android Applications*
+**Introduction to Reverse Engineering Android Applications**
 
 Download: 
 
-CrackME! Android application
-ARM Translation for Genymotion
+  1. CrackME! Android application
+  2. ARM Translation for Genymotion
+
+  git clone 
+  git clone 
 
 Building the Environment
 ------------------------
