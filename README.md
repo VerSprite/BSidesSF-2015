@@ -8,7 +8,7 @@ Pre-Requirements:
 
 Download: 
 
-  1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/blob/master/crackme.apk
+  1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/tree/master/app/
   2. ARM Translation for Genymotion -> https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip
 
 Building the Environment
