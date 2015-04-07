@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CrackME!</string>
+
+    <string name="crack_me">Welcome to CrackME!</string>
+    <string name="key_field">Key: </string>
+    <string name="button_submit">Submit!</string>
+</resources>
