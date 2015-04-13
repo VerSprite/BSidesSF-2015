@@ -8,7 +8,7 @@ Pre-Requirements:
 
 Download: 
 
-  1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/tree/master/app/
+  1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/tree/master/app/app-release.apk
   2. ARM Translation for Genymotion -> https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip
 
 Building the Environment
@@ -26,7 +26,7 @@ Building the Environment
 6. Power on virtual device
 7. Download ARM Translation support
 8. Drag-and-drop ZIP into booted virtual device - *This will require you to restart the virtual device*
-9. Download CrackME! Android application
-10. Install CrackME! application -> adb install /path/to/apk
+9. Download CrackME! Android application - https://github.com/VerSprite/BSidesSF-2015/tree/master/app/app-release.apk
+10. Install CrackME! application -> adb install app-release.apk
 11. Download and install apktool, dex2jar, androguard, jd-gui
 12. http://ibotpeaches.github.io/Apktool/ - https://code.google.com/p/dex2jar/ - https://github.com/androguard/androguard - http://jd.benow.ca/
