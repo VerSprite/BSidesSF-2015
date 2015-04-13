@@ -1,12 +1,13 @@
 # BSidesSF 2015 
-**Introduction to Reverse Engineering Android Applications**
+Introduction to Reverse Engineering Android Applications
+--------------------------------------------------------
 
-Pre-Requirements: 
+**Pre-Requirements**: 
 
   - Be comfortable with using ADB (pushing, pulling, installing)
   - Have your environment setup, configured and working (Android SDK, Genymotion, Tools)
 
-Download: 
+**Download:** 
 
   1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/tree/master/app/app-release.apk
   2. ARM Translation for Genymotion -> https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip
