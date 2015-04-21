@@ -1,16 +1,13 @@
-# BSidesSF 2015 
+# BSidesSF 2015
+
 Introduction to Reverse Engineering Android Applications
 --------------------------------------------------------
 
 **Pre-Requirements**: 
 
-  - Be comfortable with using ADB (pushing, pulling, installing)
-  - Have your environment setup, configured and working (Android SDK, Genymotion, Tools)
-
-**Download:** 
-
-  1. CrackME! Android application -> https://github.com/VerSprite/BSidesSF-2015/tree/master/app/crackme.apk
-  2. ARM Translation for Genymotion -> https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip
+  - Clone this repository to your local machine
+  - Be comfortable using ADB to push, pull, and install files
+  - Have your environment setup, configured and working (Android SDK, Genymotion, Tools). Some of the these tools only work in 32-bit mode; x86_64 users will need to have ia32 support.
 
 Building the Environment
 ------------------------
@@ -19,15 +16,26 @@ Building the Environment
 
 *Download and install Java if you don't already have it*
 
-1. Download and install AndroidStudio or the standlone Android SDK
-2. Download and install Genymotion -> https://www.genymotion.com
-3. If you don't already have VirtualBox you will need to also download and install -> https://www.virtualbox.org
-4. Create a new virtual device -> Add -> Samsung Galaxy S4 - 4.3 - API 18
-5. Point Genymotion to the Android SDK -> Settings -> ADB -> 'Use custom Andorid SDK tools' -> Android SDK
-6. Power on virtual device
-7. Download ARM Translation support
-8. Drag-and-drop ZIP into booted virtual device - *This will require you to restart the virtual device*
-9. Download CrackME! Android application - https://github.com/VerSprite/BSidesSF-2015/tree/master/app/crackme.apk
-10. Install CrackME! application -> adb install app-release.apk
-11. Download and install apktool, dex2jar, androguard, jd-gui
-12. http://ibotpeaches.github.io/Apktool/ - https://code.google.com/p/dex2jar/ - https://github.com/androguard/androguard - http://jd.benow.ca/
+1. Download and install [Android Studio](https://developer.android.com/sdk/index.html) or the standlone SDK
+1. Download and install [VirtualBox](https://www.virtualbox.org)
+1. Download and install [Genymotion](https://www.genymotion.com)
+1. Download [ARM Translation](https://github.com/VerSprite/BSidesSF-2015/blob/master/Genymotion-ARM-Translation_v1.1.zip) support for Genymotion
+1. In Genymotion, create a new virtual device: Add -> Samsung Galaxy S4 - 4.3 - API 18
+1. Point Genymotion to the Android SDK: Settings -> ADB -> 'Use custom Android SDK tools' -> Android SDK
+1. Power on virtual device
+1. Drag-and-drop ZIP into booted virtual device - *This will require you to restart the virtual device*
+1. Download [CrackME!](https://github.com/VerSprite/BSidesSF-2015/tree/master/app/crackme.apk) Android application
+1. Install CrackME! application -> adb install app-release.apk
+1. Download and install [apktool](https://ibotpeaches.github.io/Apktool/), [dex2jar](https://github.com/pxb1988/dex2jar), [androguard](https://github.com/androguard/androguard), [jd-gui](http://jd.benow.ca/)
+
+If Genymotion's easy deployment for images and apps is not working, it is possible to manually install. Examine the terminal output and look for a line similar to ``OpenGL connected to 192.168.56.101:25000`` - this will tell you the IP of the device emulator. Then:
+
+    $ adb kill-server
+    $ adb connect 192.168.56.101
+    $ adb shell mkdir /sdcard/Download
+    $ adb push Genymotion-ARM-Translation_v1.1.zip /sdcard/download
+    $ adb shell
+    root@vbox86p:/ # /system/bin/flash-archive.sh /sdcard/Download/Genymotion-ARM-Translation_v1.1.zip
+    root@vbox86p:/ # reboot
+    $ adb connect 192.168.56.101
+    $ adb install app/crackme.apk
